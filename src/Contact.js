@@ -1,4 +1,14 @@
 import React from "react";
+import { styled } from "styled-components";
+
+const ContainerBlock = styled.div`
+    .list {
+        color :red;
+        background-color: #61dafb;
+        text-align:center;
+        margin-top: 30px;
+    }
+`;
 
 function ContactList({contact}) {
     return(
@@ -37,14 +47,14 @@ function Contact() {
         }
     ];
     return(
-        <div>
+        <ContainerBlock>
             <h2 className="list">연락처 목록</h2>
             <div>
                 <ContactList contact={contacts[0]} />
                 <ContactList contact={contacts[1]} />
                 <ContactList contact={contacts[2]} />
             </div>
-        </div>
+        </ContainerBlock>
     );
 };
 

@@ -106,9 +106,9 @@ function Create() {
                     <InsertForm onSubmit={handleSubmit}>
                         <input 
                             autoFocus
-                            value={value}
                             onChange={handleChange}
-                            placeholder="앞으로 할 일을 작성해주세요!"
+                            value={value}
+                            placeholder="할 일을 입력 후, Enter 를 누르세요"
                         />
                     </InsertForm>
                 </InsertFormPositioner>
@@ -117,6 +117,6 @@ function Create() {
                 <MdAdd />
             </CircleButton>
         </>
-    )
+    );
 }
 export default React.memo(Create);

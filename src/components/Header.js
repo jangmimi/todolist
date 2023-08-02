@@ -11,7 +11,7 @@ const HeaderBlock = styled.div`
 
     .day {
         margin-top: 4px;
-        color: lightgrey;
+        color: #afb4ba;
         font-size: 21px;
     }
     padding-top: 48px;
@@ -29,7 +29,7 @@ const HeaderBlock = styled.div`
 `;
 function Header() {
     const today = new Date();   // 오늘 날짜
-    const dateString = today.toLocaleString('ko-KR',{
+    const dateString = today.toLocaleString('ko-KR', {
         // 날짜 값 받을 때는 Int 사용하지 않고 numeric long numeric 사용
         year: 'numeric', 
         month: 'long',
